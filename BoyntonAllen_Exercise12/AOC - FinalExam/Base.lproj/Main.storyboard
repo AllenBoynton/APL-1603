@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="APL_FinalExam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTR-O8-c8N">
+                                <rect key="frame" x="16" y="20" width="343" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB6-mX-Mui">
+                                <rect key="frame" x="65" y="197" width="52" height="30"/>
+                                <state key="normal" title="Beatles">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="artistButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y8u-w9-WvO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnc-MK-SjC">
+                                <rect key="frame" x="239" y="197" width="82" height="30"/>
+                                <state key="normal" title="Led Zepplin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="artistButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vEq-bW-xsM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH0-Rg-0QV">
+                                <rect key="frame" x="244" y="394" width="72" height="30"/>
+                                <state key="normal" title="Pink Floyd">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="artistButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SgK-H6-1SJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wT-LH-WFe">
+                                <rect key="frame" x="44" y="581" width="100" height="30"/>
+                                <state key="normal" title="Rolling Stones">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="artistButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vs8-Y9-oos"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8K-gE-dTU">
+                                <rect key="frame" x="231" y="581" width="99" height="30"/>
+                                <state key="normal" title="Random Artist">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="randomArtist:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X2F-I5-X5q"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beatles" translatesAutoresizingMaskIntoConstraints="NO" id="agv-Qh-bFv">
+                                <rect key="frame" x="16" y="61" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Queen" translatesAutoresizingMaskIntoConstraints="NO" id="iXX-HL-903">
+                                <rect key="frame" x="16" y="258" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pink_Floyd" translatesAutoresizingMaskIntoConstraints="NO" id="XZe-5X-el5">
+                                <rect key="frame" x="202" y="258" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Led_Zepplin" translatesAutoresizingMaskIntoConstraints="NO" id="ugW-Hc-ktN">
+                                <rect key="frame" x="202" y="61" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Random" translatesAutoresizingMaskIntoConstraints="NO" id="6Ri-ks-i6J">
+                                <rect key="frame" x="202" y="445" width="157" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roll_Stone" translatesAutoresizingMaskIntoConstraints="NO" id="czc-1X-ftI">
+                                <rect key="frame" x="16" y="445" width="157" height="128"/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmT-cV-blT">
+                                <rect key="frame" x="59" y="394" width="70" height="30"/>
+                                <state key="normal" title="Queen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="artistButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oSe-xY-smL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="JG0-KJ-HD3" kind="presentation" identifier="ToSecondViewController" id="c3v-e3-FOb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498.5" y="348.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="kX4-Np-Bd8">
+            <objects>
+                <viewController id="JG0-KJ-HD3" customClass="SecondViewController" customModule="APL_FinalExam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P4L-uI-UMI"/>
+                        <viewControllerLayoutGuide type="bottom" id="bol-tr-1Ok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HcH-3k-JUX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw9-DU-Ipg">
+                                <rect key="frame" x="16" y="20" width="343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-Js-HRg">
+                                <rect key="frame" x="26" y="574" width="60" height="30"/>
+                                <state key="normal" title="Go Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="JG0-KJ-HD3" eventType="touchUpInside" id="Hih-Cl-fKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkt-6E-S5Z">
+                                <rect key="frame" x="221" y="574" width="94" height="30"/>
+                                <state key="normal" title="Create Album">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PqM-zP-Jyo" kind="presentation" id="1U5-VZ-hVk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Yi-DE-KMs">
+                                <rect key="frame" x="16" y="57" width="343" height="232"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t9n-vM-bkP">
+                                <rect key="frame" x="12" y="297" width="351" height="269"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JG0-KJ-HD3" id="V9h-yi-KPK"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistDescription" destination="t9n-vM-bkP" id="M5n-Mp-7xO"/>
+                        <outlet property="artistImage" destination="5Yi-DE-KMs" id="8Ox-2W-h7c"/>
+                        <outlet property="artistLabel" destination="Xw9-DU-Ipg" id="70d-OR-i9M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOq-w5-v5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929.5" y="348.5"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="Npt-Kb-Jpu">
+            <objects>
+                <viewController id="PqM-zP-Jyo" customClass="ThirdViewController" customModule="APL_FinalExam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pbT-At-MYu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bx6-ud-sxL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="13d-Fq-9FL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Album Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KG0-qr-ArR">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="5rJ-2q-1DQ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year Released" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ob-2u-GX7">
+                                <rect key="frame" x="16" y="71" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="uvJ-CH-Ejs"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Name 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8G-74-Z71" userLabel="Song1">
+                                <rect key="frame" x="16" y="116" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="PEh-0T-qLF"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Name 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fGG-6O-xhY" userLabel="Song2">
+                                <rect key="frame" x="16" y="164" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="Wv8-GL-dBi"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Name 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0au-W5-xFY">
+                                <rect key="frame" x="16" y="210" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="eiW-aw-0Z9"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Name 4" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HFQ-dq-dg4">
+                                <rect key="frame" x="16" y="256" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="v3C-5v-VHa"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Name 5" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTk-GG-Xhw">
+                                <rect key="frame" x="16" y="303" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="uuc-HV-bLH"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Name 6" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6QN-V0-fBa">
+                                <rect key="frame" x="16" y="349" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PqM-zP-Jyo" id="opN-f2-Vw6"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-Ah-M27">
+                                <rect key="frame" x="143" y="411" width="89" height="42"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="e3b-3J-Hdc" kind="unwind" unwindAction="unwindForSegue:towardsViewController:" id="x9b-ny-z06"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumName" destination="KG0-qr-ArR" id="5MX-ci-Mte"/>
+                        <outlet property="song1" destination="h8G-74-Z71" id="Gf3-F4-hoR"/>
+                        <outlet property="song2" destination="fGG-6O-xhY" id="Pck-SX-B3x"/>
+                        <outlet property="song3" destination="0au-W5-xFY" id="47R-97-dU3"/>
+                        <outlet property="song4" destination="HFQ-dq-dg4" id="lv3-Sa-lp8"/>
+                        <outlet property="song5" destination="NTk-GG-Xhw" id="RGG-kn-wce"/>
+                        <outlet property="song6" destination="6QN-V0-fBa" id="MqD-r8-SrP"/>
+                        <outlet property="yearReleased" destination="8ob-2u-GX7" id="s1s-yW-5gR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rZ-lp-hvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="e3b-3J-Hdc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1359.5" y="348.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Beatles" width="284" height="177"/>
+        <image name="Led_Zepplin" width="1131" height="707"/>
+        <image name="Pink_Floyd" width="1680" height="1050"/>
+        <image name="Queen" width="399" height="400"/>
+        <image name="Random" width="1616" height="1762"/>
+        <image name="Roll_Stone" width="600" height="406"/>
+    </resources>
+</document>
